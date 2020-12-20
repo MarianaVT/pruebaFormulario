@@ -1,0 +1,44 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Ingreso</title>
+	</head>
+	<body>
+		<h1>Datos del usuario</h1>
+		<table>
+			<tr>
+				<?php
+					for($i=0; $i<$user; $i++){
+						echo"<tr>";
+							echo"<td>";
+								echo$user['Email'];
+							echo"</td>";
+						echo"</tr>";
+						echo"<tr>";
+							echo"<td>";
+								echo$user['Nombre'];
+							echo"</td>";
+						echo"</tr>";
+						echo"<tr>";
+							echo"<td>";
+								echo$user['Apellido paterno'];
+							echo"</td>";
+						echo"</tr>";
+						echo"<tr>";
+							echo"<td>";
+								echo$user['Apellido materno'];
+							echo"</td>";
+						echo"</tr>";
+						echo"<tr>";
+							echo"<td>";
+								echo$user['Edad'];
+							echo"</td>";
+						echo"</tr>";	
+					}
+				?>
+			</tr>
+		</table>
+	</body>
+</html>
